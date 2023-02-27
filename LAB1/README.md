@@ -4,7 +4,7 @@ Homework
 
 - Then I initialised the running time of the application in milliseconds (long startTime = System.nanoTime();)
 
-- I created the latinSquare matrix containing symbols from 1 to n 
+- I created the latinSquare matrix containing symbols from 1 to n using the formula: (i + j) % n + 1;
 
 - Using if condition I checked if the number is bigger than 30.000, if so, I just displayed the running time
 
