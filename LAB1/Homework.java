@@ -1,6 +1,7 @@
 package Homework;
 
 import java.util.Scanner;
+
 public class Homework {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -28,8 +29,7 @@ public class Homework {
 
         if (n > 30000) {
             System.out.printf("%d milliseconds\n", totalTime / 1000000);
-        }
-        else {
+        } else {
             for (int i = 0; i < n; i++) {
                 String line = "";
                 String column = "";
@@ -42,10 +42,8 @@ public class Homework {
             }
 
             System.out.println("Elements of latinSquare: ");
-            for(int i = 0; i < n ; i++)
-            {
-                for(int j = 0; j < n; j++)
-                {
+            for (int i = 0; i < n; i++) {
+                for (int j = 0; j < n; j++) {
                     System.out.print(latinSquare[i][j] + "\t");
                 }
                 System.out.println(" ");
