@@ -1,7 +1,6 @@
-package Homework;
+package homework;
 
 import java.util.Scanner;
-
 public class Homework {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -20,7 +19,7 @@ public class Homework {
 
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
-                latinSquare[i][j] = (i + j) % n + 1;
+                latinSquare[i][j] = (i + j) % n + 1; //0 % 3 + 1
             }
         }
 
@@ -46,7 +45,7 @@ public class Homework {
                 for (int j = 0; j < n; j++) {
                     System.out.print(latinSquare[i][j] + "\t");
                 }
-                System.out.println(" ");
+                System.out.println();
             }
         }
     }
