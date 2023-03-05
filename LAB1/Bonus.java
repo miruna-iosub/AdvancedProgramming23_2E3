@@ -16,42 +16,42 @@ public class Bonus {
             return;
         }
 
-        int[][] A = new int[n][n];
+        int[][] a = new int[n][n];
         for (int i = 0; i < n; i++) {
-            A[i][(i + 1) % n] = 1;
-            A[(i + 1) % n][i] = 1;
+            a[i][(i + 1) % n] = 1;
+            a[(i + 1) % n][i] = 1;
         }
 
         System.out.println("A^1");
         for (int j = 0; j < n; j++) {
             for (int k = 0; k < n; k++) {
-                System.out.print(A[j][k] + " ");
+                System.out.print(a[j][k] + " ");
             }
             System.out.println();
         }
 
-        int[][] B = A;
-        int[][] C = new int[n][n];
+        int[][] b = a;
+        int[][] c = new int[n][n];
         for (int i = 2; i <= n; i++) {
-            C = multiply(A, B);
+            c = multiply(a, b);
             System.out.println("A^" + i);
 
             for (int j = 0; j < n; j++) {
                 for (int k = 0; k < n; k++) {
-                    System.out.print(C[j][k] + " ");
+                    System.out.print(c[j][k] + " ");
                 }
                 System.out.println();
             }
         }
 
 
-        int[][] D = new int[m][degree];
-        D = createAdjacencyMatrix(m, degree);
+        int[][] d = new int[m][degree];
+        d = createAdjacencyMatrix(m, degree);
 
         System.out.println("Regular adjacency matrix");
         for (int j = 0; j < m; j++) {
             for (int k = 0; k < m; k++) {
-                System.out.print(D[j][k] + " ");
+                System.out.print(d[j][k] + " ");
             }
             System.out.println();
         }
