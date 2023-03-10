@@ -1,5 +1,5 @@
 package compulsory;
 
 interface Node {
-    String getName();
+    String getName(); 
 }
