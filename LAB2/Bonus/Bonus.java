@@ -31,6 +31,5 @@ public class Bonus {
 
         System.out.println("Shortest path between " + iasi.getName() + " and " + timisoara.getName() + ": " + shortestPath.toString());
         System.out.println("Fastest path between " + iasi.getName() + " and " + timisoara.getName() + ": " + fastestPath.toString());
-
     }
 }
