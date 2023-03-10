@@ -1,6 +1,6 @@
 package homework;
 
-import java.util.Objects;
+import java.util.Objects; 
 
 public class Road {
     Location start;
