@@ -18,5 +18,6 @@ Bonus
 - - - Then a simple algorithm for finding the minimum value for the distances in order to update the current location and eventually check if I have reached the "end" point, either way that one is going to be removed from the unvisited set;
 - - - I updated the distance and the previousLocation for each neighbor of the current location;
 - - - And lastly I constructed the route by following as long as I had a previous location to add to my path till i reached the beginning of the shortest route;
+- - For the implementation of "findFastestPath" I used the same algorithm but based on the travelTime of each road and not the distance between the locations;
 
 ![image](https://user-images.githubusercontent.com/100404656/224404467-85a29f51-2823-4aad-8644-5481b0f6ba8c.png)
