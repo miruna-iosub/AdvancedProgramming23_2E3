@@ -5,7 +5,7 @@ public class Homework {
         ProblemInstance problem = new ProblemInstance();
 
         City bucharest = new City("Bucharest",  8336817);
-        City iasi = new City("Iasi", 636857);
+        City iasi = new City("Iasi", 636858);
         Airport iasiAirport = new Airport("Iasi International Airport", 87534384);
         GasStation iasiGas = new GasStation("Iasi Gas Station", 6.50);
 
