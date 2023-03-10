@@ -2,7 +2,7 @@ package compulsory;
 
 class Company implements Comparable<Company>, Node {
     private final String name;
-
+ 
     public Company(String name) {
         this.name = name;
     }
