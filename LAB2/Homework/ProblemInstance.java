@@ -31,6 +31,7 @@ class ProblemInstance {
     }
 
     public boolean isValid() {
+        // for each location we check if it's being visited at least once in one of the roads
         for (Location location : locations) {
             boolean visited = false;
             for (Road road : roads) {
@@ -47,9 +48,10 @@ class ProblemInstance {
     }
 
     public boolean canReach(Location start, Location end) {
-        // bfs
+        // lists used to keep the track of visited and unvisited locations
         List<Location> visited = new ArrayList<>();
         List<Location> unvisited = new ArrayList<>();
+        // adding the start point as the first element unvisited so we can use Breadth First Search to check if we can reach the end point via a connected path
         unvisited.add(start);
         while (!unvisited.isEmpty()) {
             Location location = unvisited.remove(0);
