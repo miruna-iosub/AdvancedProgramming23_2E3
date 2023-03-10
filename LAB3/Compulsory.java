@@ -1,6 +1,6 @@
 package compulsory;
 
-import java.util.*;
+import java.util.*; 
 public class Compulsory {
     public static void main(String[] args) {
         List<Node> nodes = new ArrayList<>();
