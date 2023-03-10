@@ -38,7 +38,7 @@ class Airport extends Location {
     private int terminals;
 
     public Airport(String name, int terminals) {
-        super(name);
+        super(name); 
         this.terminals = terminals;
     }
 
