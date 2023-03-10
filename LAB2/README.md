@@ -19,7 +19,7 @@ Bonus
 - - Secondly I mostly focused on "findShortestPath" that was meant to display the shortest route between "start" and "end" points 
 - - - I used 2 Maps (distances and previousLocations) to keep the track of distances for each location and the previousLocation that was reached before, and also a Set in which all unvisited locations were saved;
 - - - Then a simple algorithm for finding the minimum value for the distances and eventually check if I have reached the "end" point, either way that one is going to be removed from the unvisited set;
-- - - I updated the distance and the previousLocation for each neighbor of the current location
+- - - I updated the distance and the previousLocation for each neighbor of the current location;
 - - - And lastly I constructed the route by following as long as I had a previous location to add to my path till i reached the destination;
 
 ![image](https://user-images.githubusercontent.com/100404656/224404467-85a29f51-2823-4aad-8644-5481b0f6ba8c.png)
