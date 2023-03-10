@@ -6,4 +6,7 @@ Homework
 - - canReach() method that checks if there is an actual way to reach an end point "end" that starts from a start point "start" via a connected bigger road ( for that I just created a loop and checked each location mentioned as "unvisited" followed by its neighbor until I actually got the the "end" point).
 - - and also two methods that are used to add new locations and roads to the lists that the main class holds
 
+![image](https://user-images.githubusercontent.com/100404656/224396339-f6d5ec6b-0987-45e2-b192-a756f7cf1b04.png)
+
+
 Bonus
