@@ -8,9 +8,6 @@ Homework
 
 ![image](https://user-images.githubusercontent.com/100404656/224396524-5ced3195-699f-4c38-b362-627caf04d50f.png)
 
-
-Bonus
-
 Bonus
 - The bonus contains 4 main classes: Bonus, Location, Road and Solution;
 - Location and Road classes represent the information about each location and road in a nutshell, I also added the "toString()" method;
