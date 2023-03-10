@@ -14,7 +14,7 @@ Bonus
 - Solution class is the one that describes the solution of the problem which has to find either the shortest route between two location or the fastest one;
 - - First I implemented addLocation and addRoad methods which allow you to add as many locations and roads as you want, as long as they are not the same ones declared before;
 - - Secondly I mostly focused on "findShortestPath" method that was meant to display the shortest route between "start" and "end" points 
-- - - I used 2 Maps (distances and previousLocations) to keep the track of distances for each location and the previousLocation that was reached before, and also a Set in which all unvisited locations were saved;
+- - - I used 2 Maps (distances and previousLocations) to keep the track of distances for each location (for the start point I marked it as being 0.0 in the beginning) and the previousLocation that was reached before, and also a Set in which all unvisited locations were saved;
 - - - Then a simple algorithm for finding the minimum value for the distances and eventually check if I have reached the "end" point, either way that one is going to be removed from the unvisited set;
 - - - I updated the distance and the previousLocation for each neighbor of the current location;
 - - - And lastly I constructed the route by following as long as I had a previous location to add to my path till i reached the destination;
