@@ -41,12 +41,12 @@ public class Solution {
                 }
             }
 
+            unvisited.remove(current);
+            
             if (current == end) {
                 break;
             }
-
-            unvisited.remove(current);
-
+            
             // update the distances and previous locations for each neighbor of the current location that is being checked
             for (Road road : getNeighbors(current)) {
                 Location neighbor = road.getEnd();
@@ -97,12 +97,12 @@ public class Solution {
                     smallestDuration = duration;
                 }
             }
+            
+            unvisited.remove(current);
 
             if (current == end) {
                 break;
             }
-
-            unvisited.remove(current);
 
             // update the distances and previous locations for each neighbor of the current location
             for (Road road : getNeighbors(current)) {
