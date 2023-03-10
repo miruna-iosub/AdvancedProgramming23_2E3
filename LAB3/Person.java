@@ -1,7 +1,7 @@
 package compulsory;
 
 class Person implements Comparable<Person>, Node {
-    private final String name;
+    private final String name; 
 
     public Person(String name) {
         this.name = name;
