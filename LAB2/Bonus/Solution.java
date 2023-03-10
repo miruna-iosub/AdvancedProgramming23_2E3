@@ -130,7 +130,7 @@ public class Solution {
 
     private List<Road> getNeighbors(Location location) {
         List<Road> neighbors = new ArrayList<>();
-        // for each road that has a start point a certain location, add the whole road as a neighbor so check its travel time or distance in the main method can be possible
+        // for each road that has a start point a certain location, add the whole road as a neighbor so checking its travel time or distance in the main method can be possible
         for (Road road : roads) {
             if (road.getStart() == location) {
                 neighbors.add(road);
