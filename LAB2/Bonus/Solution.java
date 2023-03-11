@@ -41,14 +41,23 @@ public class Solution {
                 }
             }
 
-            unvisited.remove(current);
-            
             if (current == end) {
                 break;
             }
-            
+
+            unvisited.remove(current);
+
             // update the distances and previous locations for each neighbor of the current location that is being checked
-            for (Road road : getNeighbors(current)) {
+
+            List<Road> neighbors = new ArrayList<>();
+            // for each road that has a start point a certain location, add the whole road as a neighbor so checking distance can be possible
+            for (Road road : roads) {
+                if (road.getStart() == current) {
+                    neighbors.add(road);
+                }
+            }
+
+            for (Road road : neighbors) {
                 Location neighbor = road.getEnd();
                 int distanceToNeighbor = distances.get(current) + road.getDistance();
 
@@ -97,15 +106,24 @@ public class Solution {
                     smallestDuration = duration;
                 }
             }
-            
-            unvisited.remove(current);
 
             if (current == end) {
                 break;
             }
 
+            unvisited.remove(current);
+
             // update the distances and previous locations for each neighbor of the current location
-            for (Road road : getNeighbors(current)) {
+
+            List<Road> neighbors = new ArrayList<>();
+            // for each road that has a start point a certain location, add the whole road as a neighbor so checking its travel time can be possible
+            for (Road road : roads) {
+                if (road.getStart() == current) {
+                    neighbors.add(road);
+                }
+            }
+
+            for (Road road : neighbors) {
                 Location neighbor = road.getEnd();
                 double durationToNeighbor = durations.get(current) + road.getTravelTime();
 
@@ -126,16 +144,5 @@ public class Solution {
         }
 
         return path;
-    }
-
-    private List<Road> getNeighbors(Location location) {
-        List<Road> neighbors = new ArrayList<>();
-        // for each road that has a start point a certain location, add the whole road as a neighbor so checking its travel time or distance in the main method can be possible
-        for (Road road : roads) {
-            if (road.getStart() == location) {
-                neighbors.add(road);
-            }
-        }
-        return neighbors;
     }
 }
