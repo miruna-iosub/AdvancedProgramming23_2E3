@@ -1,13 +1,13 @@
 package homework;
 
-import java.util.Objects; 
+import java.util.Objects;
 
 public class Road {
-    Location start;
-    Location end;
-    Highway highway;
-    Express express;
-    Country country;
+    private Location start;
+    private Location end;
+    private Highway highway;
+    private Express express;
+    private Country country;
 
     public Road(Location start, Location end) {
         this.start = start;
@@ -53,25 +53,6 @@ public class Road {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Road road = (Road) o;
-        return Objects.equals(start, road.start) &&
-                Objects.equals(end, road.end);
-    }
-}
-
-class Highway extends Road {
-    public Highway(Location start, Location end) {
-        super(start, end);
-    }
-}
-
-class Express extends Road {
-    public Express(Location start, Location end) {
-        super(start, end);
-    }
-}
-
-class Country extends Road {
-    public Country(Location start, Location end) {
-        super(start, end);
+        return Objects.equals(start, road.start) && Objects.equals(end, road.end);
     }
 }
