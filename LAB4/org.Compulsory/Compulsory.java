@@ -22,7 +22,7 @@ public class Compulsory {
 
         var projects = IntStream.rangeClosed(0, 2).mapToObj(i -> new Project("P" + i)).toArray(Project[]::new);
 
-        Collections.addAll(projectsTree, projects);
+        Collections.addAll(projectsTree, projects); 
 
         projectsTree.stream().sorted();
 
