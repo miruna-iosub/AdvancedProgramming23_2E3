@@ -5,4 +5,4 @@ Homework
 - - checkImportance() method simply returns a node's importance within a network by counting all the relationships it has either with another node that is an instance of Person class or Company class (thus why I used maps);
 - - To print the network I used showNetwork() method that creates an ArrayList of all the nodes and sorts them all in order to display them on the screen in ascending order based on their importance;
 
-![image](https://user-images.githubusercontent.com/100404656/226111428-af3fe889-75c0-4aba-b1e1-99f1b283a281.png)
+![image](https://user-images.githubusercontent.com/100404656/226111589-1cafa76f-c4d9-4bf7-9d36-7d81100febe2.png)
