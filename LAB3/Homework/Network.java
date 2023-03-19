@@ -20,13 +20,7 @@ public class Network {
     public void showNetwork() {
         List<Object> sortedNodes = new ArrayList<>(nodes);
         Collections.sort(sortedNodes, Comparator.comparing(this::checkImportance));
-        for (Object node : sortedNodes) {
-            if (node instanceof Person person) {
-                System.out.println(person.toString());
-            } else if (node instanceof Company company) {
-                System.out.println(company.toString());
-            }
-        }
+        sortedNodes.forEach(node ->  System.out.println(node));
     }
 
     public int checkImportance(Object node) {
