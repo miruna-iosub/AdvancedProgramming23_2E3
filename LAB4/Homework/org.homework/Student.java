@@ -1,4 +1,4 @@
-package src.main.java.org.homework;
+package org.homework;
 
 public class Student implements Comparable<Student> {
     private String name;
