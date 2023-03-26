@@ -1,4 +1,4 @@
-package src.main.java.org.homework;
+package org.homework;
 
 import java.util.*;
 
