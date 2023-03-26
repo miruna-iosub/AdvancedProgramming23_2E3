@@ -18,7 +18,7 @@ Bonus
 
 For the second half of the bonus I implemented the main function called identifyBlocks() to identify the blocks of the network (aka the subgraphs that are maximally 2-connected) that will be returned as a List of lists. 
 - In order to do that I saved all the visited nodes in a HashSet and for each node I first checked if it was actually visited already. If so, I just return the block and if not, I added it to the new block I created, and then visited it via visit() method which is basically a recursive way that goes throughout all the nodes that are its neighbors and checks if they are part of the same 2-connected subgraph.
-- To check if 2 nodes are part of a 2-connected subgraph we first get the neighbors for both and check if they are related to at least one common neighbor. If there are equal to or more than 1 it means that the value returned will be "true" and we can continue the recursion by visiting each neighbor of the node I started with.
+- To check if 2 nodes are part of a 2-connected subgraph we first get the neighbours for both and check if they are related to at least one common neighbor. If there are equal to or more than 1 it means that the value returned will be "true" and we can continue the recursion by visiting each neighbor of the node I started with.
 
 ![image](https://user-images.githubusercontent.com/100404656/227602903-0d221a4d-2da3-48ec-b6d4-04a7d20b6b1e.png)
 
