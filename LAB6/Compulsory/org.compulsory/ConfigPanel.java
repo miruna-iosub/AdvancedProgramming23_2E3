@@ -3,7 +3,6 @@ package org.compulsory;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 
-
 public class ConfigPanel extends JPanel {
     final MainFrame frame;
     JLabel dotsLabel, linesLabel;
