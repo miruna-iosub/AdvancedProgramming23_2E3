@@ -3,6 +3,7 @@ package org.compulsory;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+
 public class SharedMemory {
     private final List<Token> tokens;
     public SharedMemory(int numTokens) {
