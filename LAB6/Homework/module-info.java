@@ -1,4 +1,4 @@
-module com.example.demo {
+module com.example.homeworkLAB6 {
         requires javafx.controls;
         requires javafx.fxml;
         requires javafx.web;
