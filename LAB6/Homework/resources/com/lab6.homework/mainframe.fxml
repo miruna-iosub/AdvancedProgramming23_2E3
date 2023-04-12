@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ComboBox?>
+<AnchorPane prefHeight="800.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lab6.homework.DrawingApplicationController">
+    <ButtonBar buttonOrder="U+L_HE+FBIX_NCYOA_R" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="58.0" prefWidth="1026.0" style="-fx-background-color: #0066cc;">
+        <buttons>
+            <Label text="Number of dots: " />
+            <Spinner fx:id="numberOfDotsSpinner"/>
+            <Label centerShape="false" scaleShape="false" text="Line Probability:" />
+            <ComboBox fx:id="lineProbabilityCombo" prefWidth="150.0" promptText="1.0" />
+            <Button onMouseClicked="#handleNewGameButton" text="Create new game" />
+        </buttons>
+    </ButtonBar>
+    <Group fx:id="canvasGroupRoot">
+        <Canvas fx:id="canvasPaneId" height="600.0" layoutY="59.0" nodeOrientation="INHERIT" width="1020.0" style="-fx-background-color: #f2f2f2; -fx-border-color: #0066cc; -fx-border-width: 2px;" />
+    </Group>
+    <ButtonBar buttonOrder="U+L_HE+FBIX_NCYOA_R" cacheShape="false" centerShape="false" layoutX="-6.0" layoutY="717.0" maxHeight="120.0" maxWidth="1252.0" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="51.0" prefWidth="1032.0" style="-fx-background-color: #0066cc;">
+        <buttons>
+            <Button onMouseClicked="#handleLoadButtonClick" text="Load" style="-fx-background-color: #ffffff; -fx-text-fill: #0066cc;" />
+            <Button onMouseClicked="#handleSaveButtonClick" text="Save" style="-fx-background-color: #ffffff; -fx-text-fill: #0066cc;" />
+            <Button onMouseClicked="#handleResetButtonClick" text="Reset" style="-fx-background-color: #ffffff; -fx-text-fill: #0066cc;" />
+            <Button onMouseClicked="#handleExitButtonClick" text="Exit" style="-fx-background-color: #ffffff; -fx-text-fill: #0066cc;" />
+            <Button onMouseClicked="#handleExportPNG" text="Export PNG" style="-fx-background-color: #ffffff; -fx-text-fill: #0066cc;" />
+            <VBox prefHeight="5.0" prefWidth="100.0">
+                <TextArea fx:id="greenPlayerName" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="100.0" promptText="Green" text="Green" style="-fx-background-color: #009933; -fx-text-fill: #000000;" />
+                <TextArea fx:id="yellowPlayerName" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="100.0" promptText="Yellow" text="Yellow" style="-fx-background-color: #ffff33; -fx-text-fill: #000000;" />
+            </VBox>
+        </buttons>
+    </ButtonBar>
+    <ButtonBar layoutX="1.0" layoutY="678.0">
+        <buttons>
+            <Label prefHeight="15.0" prefWidth="100.0" text="Next move: " />
+            <TextArea fx:id="playerToMoveName" editable="false" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="100.0" />
+        </buttons>
+    </ButtonBar>
+</AnchorPane>
+
+
