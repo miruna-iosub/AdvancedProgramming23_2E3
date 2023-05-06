@@ -33,7 +33,7 @@ public class Album extends Superclass{
     public void setId(int id) {
         this.id = id;
     }
-
+ 
     public String getArtist() {
         return artist;
     }
