@@ -3,7 +3,7 @@ package util;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
-public class PersistenceUtil {
+public class PersistenceUtil { 
 
     private EntityManagerFactory entity_manager_factory = null;
     private static PersistenceUtil instance;
