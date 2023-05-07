@@ -3,7 +3,7 @@ package repository;
 
 import java.util.List;
 
-import entity.Album;
+import entity.Album; 
 import util.PersistenceUtil;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
