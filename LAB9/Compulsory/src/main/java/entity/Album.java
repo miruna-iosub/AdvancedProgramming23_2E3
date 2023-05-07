@@ -1,7 +1,7 @@
 package entity;
 
 
-import java.io.Serializable;
+import java.io.Serializable; 
 import javax.persistence.*;
 
 @Entity
