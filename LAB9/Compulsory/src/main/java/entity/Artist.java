@@ -6,7 +6,7 @@ import java.util.List;
 
 @Entity
 @Table(name="artists")
-
+ 
 public class Artist implements Serializable {
 
     @Id
