@@ -2,7 +2,7 @@ package app;
 
 import java.util.List;
 import entity.Album;
-import entity.Artist;
+import entity.Artist; 
 import repository.AlbumRepository;
 import repository.ArtistRepository;
 
