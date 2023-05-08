@@ -14,20 +14,20 @@ public class AlbumRepository {
     public static void create(Album album){
 
         EntityManagerFactory emfactory = PersistenceUtil.getInstance().getEMFactory();
-        EntityManager entitymanager = emfactory.createEntityManager();
-        entitymanager.getTransaction().begin();
+        EntityManager entityManager = emfactory.createEntityManager();
+        entityManager.getTransaction().begin();
 
-        entitymanager.persist(album);
-        entitymanager.getTransaction().commit();
-        entitymanager.close();
+        entityManager.persist(album);
+        entityManager.getTransaction().commit();
+        entityManager.close();
     }
 
     public static Album findById(int id){
 
         EntityManagerFactory emfactory = PersistenceUtil.getInstance().getEMFactory();
-        EntityManager entitymanager = emfactory.createEntityManager();
-        Album album = entitymanager.find(Album.class, id);
-        entitymanager.close();
+        EntityManager entityManager = emfactory.createEntityManager();
+        Album album = entityManager.find(Album.class, id);
+        entityManager.close();
         return album;
     }
 
