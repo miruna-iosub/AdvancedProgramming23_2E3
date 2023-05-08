@@ -37,7 +37,7 @@ public class AlbumRepository {
         EntityManager entityManager = entityManagerFactory.createEntityManager();
         Query query = entityManager.createQuery(String.format("SELECT i FROM albums i WHERE i.titlu LIKE '%i%'", name));
         List<Album> listOfalbums = (List<Album>)query.getResultList();
-        entity_manager.close();
+        entityManager.close();
         return listOfalbums;
 
     }
