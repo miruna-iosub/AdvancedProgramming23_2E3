@@ -33,12 +33,12 @@ public class AlbumRepository {
 
     public static List<Album> findByName(String name){
 
-        EntityManagerFactory entity_manager_factory = PersistenceUtil.getInstance().getEMFactory();
-        EntityManager entity_manager = entity_manager_factory.createEntityManager();
-        Query query = entity_manager.createQuery(String.format("SELECT i FROM albums i WHERE i.titlu LIKE '%i%'", name));
-        List<Album> list_of_albums = (List<Album>)query.getResultList();
+        EntityManagerFactory entityManagerFactory = PersistenceUtil.getInstance().getEMFactory();
+        EntityManager entityManager = entityManagerFactory.createEntityManager();
+        Query query = entityManager.createQuery(String.format("SELECT i FROM albums i WHERE i.titlu LIKE '%i%'", name));
+        List<Album> listOfalbums = (List<Album>)query.getResultList();
         entity_manager.close();
-        return list_of_albums;
+        return listOfalbums;
 
     }
 }
