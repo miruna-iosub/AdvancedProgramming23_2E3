@@ -2,7 +2,7 @@ package repositories;
 
 
 import entities.Album;
-import entities.Genre;
+import entities.Genre; 
 import util.PersistenceUtil;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.TypedQuery;
