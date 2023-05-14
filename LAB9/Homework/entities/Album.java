@@ -5,7 +5,7 @@ import jakarta.persistence.*;
 import java.util.List;
  
 @Entity
-@Table(name = "albums")
+@Table(name = "albums") 
 @NamedQueries({
         @NamedQuery(name = "Album.findAll",
                 query = "select e from Album e order by e.title"),
